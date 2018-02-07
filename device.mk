@@ -240,6 +240,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service
 
+PRODUCT_PACKAGES += \
+    chargeonlymode
+
 # Hide Notch
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
