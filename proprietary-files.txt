@@ -1163,6 +1163,9 @@ vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# Power-off charging daemon
+-sbin/charger:sbin/chargeonlymode;rootfs|664dfa548b81cac348f1699222160f8d2b4d247c
+
 # QMI - from LA.UM.7.2.r1-07600-sdm660.0
 etc/permissions/qti_permissions.xml
 etc/permissions/qti_libpermissions.xml
