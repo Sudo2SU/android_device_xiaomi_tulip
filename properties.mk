@@ -141,6 +141,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sib16_support=1 \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
+    persist.radio.calls.on.ims=1 \
     ril.subscription.types=NV,RUIM \
     vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.telephony.default_network=22,20 \
