@@ -109,6 +109,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.imx376_sunny.light.lux=275 \
     persist.vendor.imx376_sunny.low.lux=290
 
+# Codec2 switch
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.media.codec2=2
+
 # CNE
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.cne.feature=1
