@@ -126,7 +126,7 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # DT2W
-TARGET_TAP_TO_WAKE_NODE := "/proc/wake_node"
+TARGET_GESTURES_NODE := "/proc/wake_node"
 
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
