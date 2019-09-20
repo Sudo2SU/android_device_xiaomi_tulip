@@ -444,6 +444,10 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
+# vendor qcom/common
+-include vendor/qcom/common/av/qti-av.mk
+-include vendor/qcom/common/perf/qti-perf.mk
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndk-ext \
