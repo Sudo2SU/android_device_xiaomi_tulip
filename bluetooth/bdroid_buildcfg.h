@@ -21,6 +21,10 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
+
+// default name
+#define BTM_DEF_LOCAL_NAME "Redmi Note 6 Pro"
+
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    16

@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter jasmine_sprout twolip wayne,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),tulip)
 
 $(shell mkdir -p $(TARGET_OUT_VENDOR)/firmware)
 
