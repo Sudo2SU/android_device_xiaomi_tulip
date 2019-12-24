@@ -1,2 +1,2 @@
-add_lunch_combo lineage_tulip-userdebug
-add_lunch_combo lineage_tulip-eng
+add_lunch_combo carbon_tulip-user
+add_lunch_combo carbon_tulip-userdebug
