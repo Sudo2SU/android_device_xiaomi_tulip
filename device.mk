@@ -25,7 +25,7 @@
 $(call inherit-product, vendor/xiaomi/tulip/tulip-vendor.mk)
 
 # Inherit properties
-$(call inherit-product, $(LOCAL_PATH)/properties.mk)
+-include $(LOCAL_PATH)/properties.mk
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
