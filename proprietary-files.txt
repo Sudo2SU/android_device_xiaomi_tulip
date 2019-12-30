@@ -9,7 +9,7 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# ADSP - from jasmine
+# ADSP
 vendor/bin/adsprpcd
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsp_hvx_callback_skel.so
@@ -26,7 +26,7 @@ vendor/lib64/libfastcvopt.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
-# ADSP modules - from jasmine
+# ADSP modules
 vendor/etc/scve/facereco/gModel.dat
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
@@ -62,7 +62,7 @@ vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
-# Audio - from jasmine
+# Audio
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -90,7 +90,7 @@ vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcvirt.so
 
-# Audio Power Amplifier - from jasmine
+# Audio Power Amplifier
 vendor/firmware/dbmd4_va_fw.bin
 vendor/firmware/tas2557_uCDSP.bin
 vendor/firmware/tfa98xx.cnt
@@ -877,7 +877,7 @@ vendor/firmware/fpctzappfingerprint.b06
 vendor/firmware/fpctzappfingerprint.b07
 vendor/firmware/fpctzappfingerprint.mdt
 
-# FM - from jasmine
+# FM
 lib/libfm-hci.so
 lib/fm_helium.so
 lib64/libfm-hci.so
@@ -1045,7 +1045,7 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib/hw/keystore.sdm660.so
 vendor/lib64/hw/keystore.sdm660.so
 
-# Listen - from jasmine
+# Listen
 vendor/lib/hw/sound_trigger.primary.sdm660.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libsmwrapper.so
@@ -1061,7 +1061,7 @@ vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
-# Media - from jasmine
+# Media
 lib/vendor.qti.hardware.vpp@1.1.so
 lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/libAlacSwDec.so
