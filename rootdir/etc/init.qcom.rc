@@ -1192,6 +1192,13 @@ service vendor.hbtp /vendor/bin/hbtp_daemon
      capabilities SYS_NICE
      disabled
 
+service fm_dl /vendor/bin/init.qti.fm.sh
+    class late_start
+    user system
+    group system
+    disabled
+    oneshot
+
 service chre /vendor/bin/chre
     class late_start
     user system

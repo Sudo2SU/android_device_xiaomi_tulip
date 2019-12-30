@@ -264,11 +264,11 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
-    init.qti.fm.sh \
     init.target.rc \
     init.xiaomi.rc \
     ueventd.qcom.rc \
-    fstab.qcom
+    fstab.qcom \
+    init.qti.fm.sh
 
 # IPv6
 PRODUCT_PACKAGES += \
