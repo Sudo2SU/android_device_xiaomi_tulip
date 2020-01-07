@@ -3,7 +3,7 @@
     "remote": "gh",
     "repository": "ryan-andri/android_kernel_xiaomi_tulip",
     "target_path": "kernel/xiaomi/tulip",
-    "revision": "aosp-p"
+    "revision": "cr-7.0"
   },
   {
     "remote": "gh",
