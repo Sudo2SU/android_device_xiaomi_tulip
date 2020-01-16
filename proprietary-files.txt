@@ -1340,9 +1340,10 @@ vendor/bin/thermal-engine
 vendor/lib64/libthermalioctl.so
 vendor/lib64/libthermalfeature.so
 
-# Time services - from jasmine
+# Time services - from bq
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
+vendor/etc/init/init.time_daemon.rc|edb18291351eb7efcb597d33c2c7f2d9bb7328a9
 -vendor/lib/libtime_genoff.so
 -vendor/lib64/libtime_genoff.so
 

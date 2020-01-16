@@ -268,7 +268,8 @@ PRODUCT_PACKAGES += \
     init.xiaomi.rc \
     ueventd.qcom.rc \
     fstab.qcom \
-    init.qti.fm.sh
+    init.qti.fm.sh \
+    move_time_data.sh
 
 # IPv6
 PRODUCT_PACKAGES += \
