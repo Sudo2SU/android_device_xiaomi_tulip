@@ -79,6 +79,25 @@ void check_device()
     }
 }
 
+void property_override(char const prop[], char const value[])
+{
+    prop_info *pi;
+
+    pi = (prop_info*) __system_property_find(prop);
+    if (pi)
+        __system_property_update(pi, value, strlen(value));
+    else
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+}
+
+void property_override_all(char const system_prop[], char const vendor_prop[],
+     char const bootimage_prop[], char const value[])
+{
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
+    property_override(bootimage_prop, value);
+}
+
 void vendor_load_properties()
 {
     check_device();
@@ -92,4 +111,7 @@ void vendor_load_properties()
     property_set("dalvik.vm.heaptargetutilization", "0.75");
     property_set("dalvik.vm.heapminfree", heapminfree);
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
+
+    property_override("ro.build.description", "polaris-user 8.0.0 OPR1.170623.032 V9.5.19.0.ODGMIFA release-keys");
+    property_override_all("ro.build.fingerprint", "ro.vendor.build.fingerprint", "ro.bootimage.build.fingerprint", "Xiaomi/polaris/polaris:8.0.0/OPR1.170623.032/V9.5.19.0.ODGMIFA:user/release-keys");
 }
