@@ -112,6 +112,8 @@ void vendor_load_properties()
     property_set("dalvik.vm.heapminfree", heapminfree);
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
 
+    property_override("persist.vendor.camera.exif.model", "Redmi Note 6 Pro");
+
     property_override("ro.build.description", "polaris-user 8.0.0 OPR1.170623.032 V9.5.19.0.ODGMIFA release-keys");
     property_override_all("ro.build.fingerprint", "ro.vendor.build.fingerprint", "ro.bootimage.build.fingerprint", "Xiaomi/polaris/polaris:8.0.0/OPR1.170623.032/V9.5.19.0.ODGMIFA:user/release-keys");
 }
