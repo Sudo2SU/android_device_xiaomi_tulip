@@ -12,7 +12,7 @@ allow hal_fingerprint_sdm660 fingerprintd_data_file:dir rw_dir_perms;
 allow hal_fingerprint_sdm660 fingerprintd_data_file:file create_file_perms;
 allow hal_fingerprint_sdm660 { fuse mnt_user_file storage_file }:dir search;
 allow hal_fingerprint_sdm660 { mnt_user_file storage_file }:lnk_file read;
-allow hal_fingerprint_sdm660 fingerprint_sysfs:dir r_dir_perms;
+allow hal_fingerprint_sdm660 { fingerprint_sysfs rootfs }:dir r_dir_perms;
 allow hal_fingerprint_sdm660 fingerprint_sysfs:file rw_file_perms;
 
 allow hal_fingerprint_sdm660 hal_fingerprint_sdm660:netlink_socket { create bind write read };
