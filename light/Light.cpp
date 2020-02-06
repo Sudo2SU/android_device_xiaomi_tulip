@@ -161,7 +161,6 @@ static inline bool isLit(const LightState& state) {
 
 /* Keep sorted in the order of importance. */
 static std::vector<LightBackend> backends = {
-    { Type::ATTENTION, handleNotification },
     { Type::NOTIFICATIONS, handleNotification },
     { Type::BATTERY, handleNotification },
     { Type::BACKLIGHT, handleBacklight },
