@@ -152,6 +152,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service
 
+# Miui Charger
+include $(LOCAL_PATH)/rootdir/charger/miui_charger.mk
+
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
     cneapiclient \
