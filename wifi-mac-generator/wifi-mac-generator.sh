@@ -8,7 +8,7 @@ WLAN_MAC_HEX_PATH="/mnt/vendor/persist/wlan_bt/wlan.mac"
 # Intf0MacAddress=00AA00BB00CC
 # Intf1MacAddress=00AA00BB00CD
 # END
-WLAN_MAC_PERSIST_PATH="/mnt/vendor/persist/wlan_mac.bin"
+WLAN_MAC_PERSIST_PATH="/mnt/vendor/persist/wlan_mac_default.bin"
 
 if [ ! -s "${WLAN_MAC_HEX_PATH}" ]; then
     exit
