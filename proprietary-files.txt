@@ -1358,7 +1358,7 @@ vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
 vendor/lib64/libwvhidl.so
 
-# Wifi
+# Wifi - from jasmine
 vendor/bin/cnss-daemon
 
 # Wi-Fi Display
