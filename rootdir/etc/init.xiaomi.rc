@@ -26,6 +26,9 @@
 #
 
 on boot
+    # Camera Prop
+    setprop persist.vendor.camera.exif.model "Redmi Note 6 Pro"
+
     #define back flash and front flash
     chmod 0660 /sys/android_camera/sensor
     chmod 0660 /sys/class/leds/led:flash_0/brightness
