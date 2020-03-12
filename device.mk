@@ -284,7 +284,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc \
     fstab.qcom \
-    init.xiaomi.rc
+    init.xiaomi.rc \
+    init.qti.fm.sh
 
 # IPv6
 PRODUCT_PACKAGES += \

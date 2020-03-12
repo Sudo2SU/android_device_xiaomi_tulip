@@ -87,7 +87,6 @@ vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|5e06b7b33d084975d6
 vendor/lib64/libbtnv.so|a6793a7b93fa607fcec39da7479566f84ed39aa4
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9b7ae20ce9d6d2a67fdac94268cec441278cca3d
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|e08969ef1897ec5958894323f7d6e730a1d7ce25
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|9c1b952043c7722fd27bfd971ecebb2584671862
 
 # Bluetooth (aptX)
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
@@ -807,17 +806,21 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# FM
-lib/libfm-hci.so
-lib/fm_helium.so
-lib64/libfm-hci.so
-lib64/fm_helium.so
-vendor/bin/fm_qsoc_patches
--lib/vendor.qti.hardware.fm@1.0.so
--lib64/vendor.qti.hardware.fm@1.0.so
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
+# FM - from jasmine
+lib/fm_helium.so|feb4819f1898c67dfda4f965d7cc2711c74d1a99
+lib/libfm-hci.so|7700b02faa484ff682c618402f62b86bf8588db2
+-lib/libqcomfm_jni.so|9c699eedacf304bd0e59c9a10731d525e88e1bb3
+lib64/fm_helium.so|bc9f6314528630c060b593cef4a8cec786b22467
+lib64/libfm-hci.so|589e9e290acfa18a49deba33606ed158d5e7f898
+-lib64/libqcomfm_jni.so|f20e3260120223f25ca632b5a8a2dac99cd92588
+-product/lib/vendor.qti.hardware.fm@1.0.so|a090651122fcad265ae7562c88dca746f893ad36
+-product/lib64/vendor.qti.hardware.fm@1.0.so|fc7ad886f82089edf36509865fadac17a7340f32
+vendor/etc/init/init.qti.fm.rc|4f5459058debbea76991e69f8522126f6655fd3b
+vendor/bin/fm_qsoc_patches|b71da2de390de868251dcbf56f141c759227d6d1
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|2087fee60eb44c097ee9e6c93f4c873fff280866
+vendor/lib/vendor.qti.hardware.fm@1.0.so|89a7ec5cc673d13afc73116eccff2e58f218a34d
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|506efd87250697bdae271f86ea472785a77b84ef
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|073cace3aa8d0ffa025d9df67c45f8a907109339
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
