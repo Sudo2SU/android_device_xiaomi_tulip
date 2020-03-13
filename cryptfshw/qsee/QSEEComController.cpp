@@ -28,21 +28,6 @@
 
 namespace {
 constexpr char kFilename[] = "libQSEEComAPI.so";
-
-#ifdef WAIT_FOR_QSEE
-bool IsQseecomUp() {
-    using namespace std::chrono_literals;
-    for (size_t i = 0; i < CRYPTFS_HW_UP_CHECK_COUNT; i++) {
-        if (::android::base::GetBoolProperty("sys.keymaster.loaded", false)) {
-            return true;
-        }
-        std::this_thread::sleep_for(100ms);
-    }
-
-    LOG(ERROR) << "Timed out waiting for QSEECom";
-    return false;
-}
-#endif
 }  // anonymous namespace
 
 namespace vendor {
@@ -71,14 +56,6 @@ Controller::Controller() {
         LOG(ERROR) << "FAILED TO LOAD LIBRARY " << kFilename << ": " << dlerror();
         return;
     }
-
-#ifdef WAIT_FOR_QSEE
-    if (!IsQseecomUp()) {
-        LOG_TO(SYSTEM, ERROR)
-                << "Timed out waiting for QSEECom listeners. Aborting FDE key operation";
-        return;
-    }
-#endif
 
     handle_ = handle;
     mFn_create_key = loadFunction<int (*)(int, void*)>("QSEECom_create_key");
