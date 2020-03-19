@@ -90,6 +90,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi \
     persist.vendor.camera.preview.ubwc=0 \
     vendor.video.disable.ubwc=1 \
     vidc.enc.dcvs.extra-buff-count=2 \
