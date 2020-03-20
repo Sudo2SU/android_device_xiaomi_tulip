@@ -109,7 +109,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
-    audio.bluetooth.default
+    audio.bluetooth.default \
+    libbluetooth_qti
 
 PRODUCT_PACKAGES += \
     libsndmonitor \
