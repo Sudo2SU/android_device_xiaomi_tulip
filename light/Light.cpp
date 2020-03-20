@@ -43,9 +43,9 @@
  */
 #define RAMP_STEPS 8
 /*
- * Each step will stay on for 100ms by default.
+ * Each step will stay on for 150ms by default.
  */
-#define RAMP_STEP_DURATION 100
+#define RAMP_STEP_DURATION 150
 /*
  * Each value represents a duty percent (0 - 100) for the led pwm.
  */
