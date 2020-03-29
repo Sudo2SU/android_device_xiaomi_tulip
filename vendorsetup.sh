@@ -1,2 +1,3 @@
-add_lunch_combo carbon_tulip-user
-add_lunch_combo carbon_tulip-userdebug
+add_lunch_combo aosp_tulip-user
+add_lunch_combo aosp_tulip-userdebug
+add_lunch_combo aosp_tulip-eng
